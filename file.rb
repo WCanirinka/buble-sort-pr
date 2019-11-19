@@ -1,4 +1,6 @@
-# first method
+# frozen_string_literal: false
+
+# first method bubble sort
 
 def bubble_sort(arr)
   arr.sort!
