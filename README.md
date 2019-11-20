@@ -5,7 +5,7 @@
    <h3 align="center">Bubble Sort</h3>
 
   <p align="center">
-    A bubble sort program that takes an array and returns a sorted array
+     A bubble sort program that takes an array and returns a sorted array
     <br />    
     <br />
     ·
