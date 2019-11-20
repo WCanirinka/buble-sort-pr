@@ -3,13 +3,13 @@
 # first method bubble sort
 
 def bubble_sort(array)
-  sorted = false
-  until !sorted
-    sorted = true
+  sorted = true
+  while sorted
+    sorted = false
     (array.length - 1).times do |a|
       if array[a + 1] < array[a]
         array[a], array[a + 1] = array[a + 1], array[a]
-        sorted = false
+        sorted = true
       end
     end
   end
@@ -19,13 +19,13 @@ end
 bubble_sort([4, 3, 78, 2, 0, 2])
 
 def bubble_sort_by(array)
-  sorted = false
-  until !sorted
-    sorted = true
+  sorted = true
+  while sorted
+    sorted = false
     (arr.length - 1).times do |a|
-      if yield(array[a], array[a + 1]) > 0
+      if yield(array[a], array[a + 1]).positive?
         array[a], array[a + 1] = array[a + 1], array[a]
-        sorted = false
+        sorted = true
       end
     end
   end
