@@ -16,7 +16,7 @@ def bubble_sort(array)
   print array
 end
 
-bubble_sort([4, 3, 78, 2, 0, 2])
+# bubble_sort([4, 3, 78, 2, 0, 2])
 
 def bubble_sort_by(array)
   sorted = true
@@ -32,6 +32,8 @@ def bubble_sort_by(array)
   print array
 end
 
+=begin
 bubble_sort_by(["hi", "hello", "hey"]) do |left, right|
   left.length - right.length
 end
+=end
