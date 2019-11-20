@@ -13,7 +13,7 @@ def bubble_sort(array)
       end
     end
   end
-  return array
+  array
 end
 
 def bubble_sort_by(array)
@@ -27,5 +27,5 @@ def bubble_sort_by(array)
       end
     end
   end
-  return array
+  array
 end
