@@ -13,25 +13,19 @@ def bubble_sort(array)
       end
     end
   end
-  print array
+  return array
 end
-
-# bubble_sort([4, 3, 78, 2, 0, 2])
 
 def bubble_sort_by(array)
   sorted = true
   while sorted
     sorted = false
-    (arr.length - 1).times do |a|
+    (array.length - 1).times do |a|
       if yield(array[a], array[a + 1]).positive?
         array[a], array[a + 1] = array[a + 1], array[a]
         sorted = true
       end
     end
   end
-  print array
+  return array
 end
-
-# bubble_sort_by(["hi", "hello", "hey"]) do |left, right|
-#  left.length - right.length
-# end
